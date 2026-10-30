@@ -1,0 +1,85 @@
+/* ==========================================================================
+   ALGOR STUDIO — Design Tokens (Clean Modern / Light Tech)
+   ========================================================================== */
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../assets/fonts/plus-jakarta-sans-latin.woff2") format("woff2");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Cores — marca */
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+  --color-indigo-500: #6366f1;
+  --color-indigo-600: #4f46e5;
+  --gradient-brand: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
+  --gradient-brand-soft: linear-gradient(135deg, rgb(37 99 235 / 0.1), rgb(79 70 229 / 0.1));
+
+  /* Cores — superfícies e texto */
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f1f5f9;
+  --color-border: rgb(15 23 42 / 0.08);
+  --color-border-strong: rgb(15 23 42 / 0.16);
+  --color-text-strong: #0f172a;
+  --color-text: #334155;
+  --color-text-muted: #64748b;
+
+  /* Cores — status (semânticas, contraste AA sobre o fundo do badge) */
+  --status-live-bg: #ecfdf5;
+  --status-live-fg: #047857;
+  --status-dev-bg: #eef2ff;
+  --status-dev-fg: #4338ca;
+  --status-concept-bg: #fffbeb;
+  --status-concept-fg: #b45309;
+
+  /* Tipografia */
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+  --text-xs: 0.8125rem;
+  --text-sm: 0.9375rem;
+  --text-base: 1.0625rem;
+  --text-lg: clamp(1.125rem, 1.05rem + 0.35vw, 1.3125rem);
+  --text-h3: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --text-h2: clamp(1.875rem, 1.4rem + 2.2vw, 3rem);
+  --text-h1: clamp(2.5rem, 1.6rem + 4.6vw, 4.75rem);
+
+  /* Espaçamento */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: clamp(4rem, 3rem + 5vw, 8rem);
+
+  /* Raios */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-pill: 999px;
+
+  /* Sombras multicamadas (estilo Stripe / Linear) */
+  --shadow-xs: 0 1px 2px rgb(15 23 42 / 0.05);
+  --shadow-sm: 0 1px 2px rgb(15 23 42 / 0.04), 0 2px 6px rgb(15 23 42 / 0.05);
+  --shadow-md: 0 2px 4px rgb(15 23 42 / 0.04), 0 8px 24px rgb(15 23 42 / 0.07);
+  --shadow-lg: 0 4px 8px rgb(15 23 42 / 0.04), 0 16px 40px rgb(15 23 42 / 0.1), 0 32px 80px rgb(37 99 235 / 0.08);
+  --shadow-brand: 0 1px 2px rgb(37 99 235 / 0.3), 0 8px 20px rgb(79 70 229 / 0.28);
+
+  /* Layout */
+  --container: 72rem;
+  --container-pad: clamp(1.25rem, 4vw, 2rem);
+  --header-h: 4.25rem;
+
+  /* Movimento */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 160ms;
+  --duration-base: 280ms;
+}

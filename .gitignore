@@ -1,0 +1,16 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Node / dependências locais eventuais
+node_modules/
+.npm
+
+# Builds locais temporários
+dist/
+.cache/
+.temp/

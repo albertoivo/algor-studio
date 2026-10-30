@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://algorstudio.com.br/sitemap.xml
