@@ -10,35 +10,67 @@ export function initNavigation() {
 
   // Header ganha fundo/blur quando a página sai do topo (sentinela + IntersectionObserver)
   const sentinel = document.getElementById("top-sentinel");
-  if (sentinel) {
+  if (sentinel && "IntersectionObserver" in window) {
     new IntersectionObserver(([entry]) => {
       header.dataset.scrolled = String(!entry.isIntersecting);
     }).observe(sentinel);
   }
 
   // Menu mobile
+  const isOpen = () => toggle.getAttribute("aria-expanded") === "true";
+
   const setMenu = (open) => {
-    nav.dataset.open = String(open);
-    toggle.setAttribute("aria-expanded", String(open));
-    toggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
+    const next = Boolean(open);
+    nav.dataset.open = String(next);
+    header.dataset.menuOpen = String(next);
+    toggle.setAttribute("aria-expanded", String(next));
+    toggle.setAttribute("aria-label", next ? "Fechar menu" : "Abrir menu");
   };
 
-  toggle.addEventListener("click", () => setMenu(toggle.getAttribute("aria-expanded") !== "true"));
+  toggle.addEventListener("click", (event) => {
+    event.stopPropagation();
+    setMenu(!isOpen());
+  });
+
   nav.addEventListener("click", (event) => {
     if (event.target.closest("a")) setMenu(false);
   });
+
+  // Fecha ao clicar/tocar fora do menu mobile
+  document.addEventListener("pointerdown", (event) => {
+    if (!isOpen()) return;
+    if (!nav.contains(event.target) && !toggle.contains(event.target)) {
+      setMenu(false);
+    }
+  });
+
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+    if (event.key === "Escape" && isOpen()) {
       setMenu(false);
       toggle.focus();
     }
   });
 
+  // Reseta o menu mobile ao expandir para viewport desktop
+  const desktopMedia = window.matchMedia("(min-width: 60.0625rem)");
+  const handleViewportChange = (event) => {
+    if (event.matches && isOpen()) setMenu(false);
+  };
+  if (typeof desktopMedia.addEventListener === "function") {
+    desktopMedia.addEventListener("change", handleViewportChange);
+  }
+
   // Link ativo conforme a seção visível
+  if (!("IntersectionObserver" in window)) return;
+
   const links = [...nav.querySelectorAll('.nav__link[href^="#"]')];
-  const sections = links
-    .map((link) => document.querySelector(link.getAttribute("href")))
-    .filter(Boolean);
+  const hero = document.getElementById("inicio");
+  const sections = [
+    ...(hero ? [hero] : []),
+    ...links
+      .map((link) => document.querySelector(link.getAttribute("href")))
+      .filter(Boolean),
+  ];
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -51,7 +83,7 @@ export function initNavigation() {
         }
       }
     },
-    { rootMargin: "-45% 0px -50% 0px" },
+    { rootMargin: "-35% 0px -55% 0px" },
   );
 
   sections.forEach((section) => observer.observe(section));

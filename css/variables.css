@@ -55,9 +55,9 @@
   --space-4: 1rem;
   --space-5: 1.5rem;
   --space-6: 2rem;
-  --space-7: 3rem;
-  --space-8: 4.5rem;
-  --space-9: clamp(4rem, 3rem + 5vw, 8rem);
+  --space-7: 2.25rem;
+  --space-8: 3rem;
+  --space-9: clamp(2.75rem, 2rem + 2.5vw, 4.5rem);
 
   /* Raios */
   --radius-sm: 0.5rem;

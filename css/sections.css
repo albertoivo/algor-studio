@@ -7,7 +7,7 @@
   position: relative;
   isolation: isolate;
   overflow: clip;
-  padding-top: calc(var(--header-h) + clamp(3rem, 2rem + 5vw, 6.5rem));
+  padding-top: calc(var(--header-h) + clamp(1.5rem, 1rem + 2vw, 2.75rem));
   padding-bottom: var(--space-9);
 }
 
@@ -287,6 +287,28 @@
   }
 }
 
+@media (max-width: 36rem) {
+  .hero__visual {
+    padding: 0;
+  }
+
+  .studio-panel__item {
+    flex-wrap: wrap;
+    gap: 0.65rem;
+  }
+
+  .studio-panel__item .badge {
+    margin-left: 3.15rem;
+  }
+
+  .float-chip {
+    position: static;
+    margin-top: var(--space-3);
+    margin-right: var(--space-2);
+    animation: none;
+  }
+}
+
 /* ---------- Sobre / Manifesto ---------- */
 .about__intro {
   display: grid;
@@ -376,21 +398,6 @@
 }
 
 /* ---------- Projetos ---------- */
-.projects__toolbar {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-3);
-}
-
-.projects__count {
-  margin-bottom: var(--space-6);
-  font-size: var(--text-sm);
-  font-weight: 600;
-  color: var(--color-text-muted);
-}
-
 .projects__grid {
   display: grid;
   gap: var(--space-5);
@@ -672,12 +679,12 @@
 }
 
 /* ---------- Revelação ao rolar (progressive enhancement, sem JS) ---------- */
-@supports (animation-timeline: view()) {
+@supports ((animation-timeline: view()) and (animation-range: entry)) {
   @media (prefers-reduced-motion: no-preference) {
     .reveal {
       animation: reveal-up linear both;
       animation-timeline: view();
-      animation-range: entry 0% entry 35%;
+      animation-range: entry 0% entry 18%;
     }
   }
 }
@@ -685,7 +692,7 @@
 @keyframes reveal-up {
   from {
     opacity: 0;
-    transform: translateY(1.75rem);
+    transform: translateY(0.85rem);
   }
 
   to {

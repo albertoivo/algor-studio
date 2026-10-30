@@ -169,15 +169,17 @@
     box-shadow var(--duration-base) ease;
 }
 
-.site-header[data-scrolled="true"] {
-  background: rgb(248 250 252 / 0.82);
+.site-header[data-scrolled="true"],
+.site-header[data-menu-open="true"] {
+  background: rgb(248 250 252 / 0.92);
   border-bottom-color: var(--color-border);
   box-shadow: var(--shadow-xs);
 }
 
 @supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
-  .site-header[data-scrolled="true"] {
-    background: rgb(248 250 252 / 0.7);
+  .site-header[data-scrolled="true"],
+  .site-header[data-menu-open="true"] {
+    background: rgb(248 250 252 / 0.78);
     -webkit-backdrop-filter: saturate(180%) blur(16px);
     backdrop-filter: saturate(180%) blur(16px);
   }
@@ -259,26 +261,30 @@
   display: none;
   width: 2.75rem;
   height: 2.75rem;
+  padding: 0;
   align-items: center;
   justify-content: center;
   border: 1px solid var(--color-border-strong);
   border-radius: var(--radius-md);
   background: var(--color-surface);
+  box-shadow: var(--shadow-xs);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .nav-toggle__bars,
 .nav-toggle__bars::before,
 .nav-toggle__bars::after {
   display: block;
-  width: 1.1rem;
+  width: 1.15rem;
   height: 2px;
   border-radius: 2px;
   background: var(--color-text-strong);
-  transition: transform var(--duration-base) var(--ease-out), opacity var(--duration-fast) ease;
+  transition: transform var(--duration-base) var(--ease-out), opacity var(--duration-fast) ease, background-color var(--duration-fast) ease;
 }
 
 .nav-toggle__bars {
   position: relative;
+  flex-shrink: 0;
 }
 
 .nav-toggle__bars::before,
@@ -314,18 +320,24 @@
   }
 
   .nav {
-    position: absolute;
-    inset: calc(var(--header-h) - 0.25rem) var(--container-pad) auto;
+    position: fixed;
+    top: calc(var(--header-h) + 0.35rem);
+    left: var(--container-pad);
+    right: var(--container-pad);
+    z-index: 60;
     flex-direction: column;
     align-items: stretch;
     gap: var(--space-3);
+    max-height: calc(100dvh - var(--header-h) - 1rem);
+    overflow-y: auto;
     padding: var(--space-4);
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--color-border-strong);
     border-radius: var(--radius-lg);
     background: var(--color-surface);
     box-shadow: var(--shadow-lg);
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
     transform: translateY(-0.5rem);
     transition:
       opacity var(--duration-base) var(--ease-out),
@@ -336,17 +348,22 @@
   .nav[data-open="true"] {
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
     transform: none;
-    transition-delay: 0s;
+    transition:
+      opacity var(--duration-base) var(--ease-out),
+      transform var(--duration-base) var(--ease-out),
+      visibility 0s linear 0s;
   }
 
   .nav__list {
     flex-direction: column;
     align-items: stretch;
+    gap: 0.2rem;
   }
 
   .nav__link {
-    padding: 0.8rem 1rem;
+    padding: 0.75rem 1rem;
     border-radius: var(--radius-md);
   }
 
@@ -553,8 +570,9 @@
 
 /* ---------- Modal de detalhes (<dialog>) ---------- */
 .project-dialog {
-  width: min(100% - 2rem, 46rem);
-  max-height: min(100dvh - 2rem, 54rem);
+  width: min(100% - 1.5rem, 46rem);
+  max-height: min(100dvh - 1.5rem, 54rem);
+  margin: auto;
   padding: 0;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
@@ -627,6 +645,8 @@
 }
 
 .project-dialog__scroll {
+  flex: 1;
+  min-height: 0;
   overflow-y: auto;
   overscroll-behavior: contain;
 }
@@ -641,7 +661,7 @@
 .project-dialog__content {
   display: grid;
   gap: var(--space-5);
-  padding: var(--space-6);
+  padding: clamp(1.25rem, 3vw, var(--space-6));
 }
 
 .project-dialog__head {
@@ -728,8 +748,10 @@
 .project-dialog__footer {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   gap: var(--space-3);
-  padding: var(--space-4) var(--space-6);
+  padding: var(--space-4) clamp(1.25rem, 3vw, var(--space-6));
   border-top: 1px solid var(--color-border);
   background: var(--color-bg);
 }
