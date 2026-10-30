@@ -1,4 +1,34 @@
 User-agent: *
 Allow: /
 
+# Motores de Busca e Indexadores de Imagens
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /assets/images/
+Allow: /assets/icons/
+
+User-agent: Bingbot
+Allow: /
+
+# Motores de Busca de IA (GEO / Answer Engines)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
 Sitemap: https://algorstudio.com.br/sitemap.xml

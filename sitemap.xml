@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://algorstudio.com.br/</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://algorstudio.com.br/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://algorstudio.com.br/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algorstudio.com.br/"/>
+    <image:image>
+      <image:loc>https://algorstudio.com.br/assets/images/og-image.jpg</image:loc>
+      <image:title>ALGOR STUDIO — Engenharia de Software e Produtos Digitais</image:title>
+      <image:caption>Estúdio independente de engenharia de software e criação de produtos digitais elegantes, escaláveis e inteligentes.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://algorstudio.com.br/assets/images/pyexplorer-cover.webp</image:loc>
+      <image:title>PyExplorer — Aprenda Python Jogando</image:title>
+      <image:caption>Jogo educativo gamificado da ALGOR STUDIO para crianças e adolescentes aprenderem Python real no navegador via WebAssembly.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://algorstudio.com.br/assets/images/logickids-cover.webp</image:loc>
+      <image:title>LogicKids — Programação em Blocos e Pensamento Computacional para Escolas</image:title>
+      <image:caption>Plataforma gamificada B2B da ALGOR STUDIO para ensino de lógica e programação em blocos em instituições de ensino.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://algorstudio.com.br/assets/images/family-finance-cover.webp</image:loc>
+      <image:title>Family Finance — Gestão Patrimonial com Conselho de Família IA</image:title>
+      <image:caption>Sistema de gestão financeira e patrimonial familiar com conselheiros virtuais de inteligência artificial baseados no Google Gemini.</image:caption>
+    </image:image>
   </url>
 </urlset>

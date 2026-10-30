@@ -1,0 +1,42 @@
+# ALGOR STUDIO
+
+> Estúdio independente de engenharia de software e criação de produtos digitais elegantes, escaláveis e inteligentes.
+
+A **ALGOR STUDIO** (https://algorstudio.com.br/) é uma empresa brasileira independente de tecnologia que concebe, arquiteta e constrói produtos digitais de alto padrão técnico e visual — sem restrição de nicho, atuando desde educação gamificada (EduTech) até gestão patrimonial assistida por inteligência artificial (FinTech).
+
+## Produtos Oficiais
+
+### 1. PyExplorer (Em produção)
+- **URL:** https://pyexplorer.com.br
+- **Categoria:** EduTech · Gamificação · WebAssembly
+- **Público:** Crianças e adolescentes de 8 a 15 anos
+- **Resumo:** Jogo educativo gamificado para aprender programação Python real diretamente no navegador, sem necessidade de instalação.
+- **Diferenciais:** Execução de Python nativo no navegador via WebAssembly (Pyodide), desafios gráficos com Turtle Graphics, 4 sagas épicas, 18 mundos, 8 tipos de desafio (incluindo Boss Battles e problemas de Parsons), emissão de certificado em PDF e suporte offline via PWA.
+- **Stack:** React 19, TypeScript, Pyodide (WASM), Monaco Editor, Firebase, PWA.
+
+### 2. LogicKids (Em desenvolvimento)
+- **URL:** https://logickids.com.br
+- **Categoria:** EduTech · Escolas (B2B) · Pensamento Computacional
+- **Público:** Escolas, professores, gestores e turmas escolares
+- **Resumo:** Plataforma gamificada de programação em blocos e raciocínio lógico projetada para instituições de ensino.
+- **Diferenciais:** Ambientes dedicados para alunos, professores e gestores; programação visual em blocos com Google Blockly com transição progressiva para Python; arquitetura monorepo com backend dedicado.
+- **Stack:** Next.js 16, React 19, FastAPI (Python 3.11), PostgreSQL, Google Blockly, Docker.
+
+### 3. Family Finance (Em desenvolvimento)
+- **URL:** https://algorstudio.com.br/#projeto-family-finance
+- **Categoria:** FinTech · Inteligência Artificial · Gestão Patrimonial
+- **Público:** Famílias e investidores
+- **Resumo:** Sistema de gestão financeira e patrimonial familiar que transforma dados em decisões estratégicas por meio do Conselho de Família IA.
+- **Diferenciais:** Três conselheiros virtuais especializados movidos pelo Google Gemini (O Estrategista de Risco, O Otimizador de Dividendos e O Caçador de Oportunidades), dashboards interativos de patrimônio, passivos, cofres (vaults) e planejamento colaborativo multi-usuário.
+- **Stack:** React 19, TypeScript, Vite, Google Gemini API, Firebase, Recharts.
+
+## Algor Labs (Pesquisa & Desenvolvimento)
+- Ferramentas para desenvolvedores
+- Automação inteligente de fluxos operacionais
+- Agentes de Inteligência Artificial aplicada
+
+## Contato & Links Institucionais
+- **Website Oficial:** https://algorstudio.com.br/
+- **E-mail:** mailto:contato@algorstudio.com.br
+- **GitHub:** https://github.com/albertoivo
+- **Sitemap:** https://algorstudio.com.br/sitemap.xml

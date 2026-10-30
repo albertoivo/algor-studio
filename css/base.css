@@ -20,6 +20,7 @@ body {
   min-height: 100dvh;
   font-family: var(--font-sans);
   font-size: var(--text-base);
+  font-size-adjust: from-font;
   line-height: 1.6;
   color: var(--color-text);
   background: var(--color-bg);

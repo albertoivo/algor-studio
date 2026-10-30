@@ -1,0 +1,32 @@
+{
+  "name": "ALGOR STUDIO — Engenharia de Software e Produtos Digitais",
+  "short_name": "ALGOR STUDIO",
+  "description": "Estúdio independente de engenharia de software que cria produtos digitais elegantes, escaláveis e inteligentes: PyExplorer, LogicKids e Family Finance.",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#2563eb",
+  "categories": ["technology", "education", "finance", "productivity"],
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
