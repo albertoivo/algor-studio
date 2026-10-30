@@ -40,3 +40,4 @@ A **ALGOR STUDIO** (https://algorstudio.com.br/) é uma empresa brasileira indep
 - **E-mail:** mailto:contato@algorstudio.com.br
 - **GitHub:** https://github.com/albertoivo
 - **Sitemap:** https://algorstudio.com.br/sitemap.xml
+
