@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ALGOR STUDIO | Estúdio de Engenharia de Software e Produtos Digitais</title>
-  <meta name="description" content="A ALGOR STUDIO é um estúdio independente de engenharia de software que cria produtos digitais elegantes e escaláveis: PyExplorer, LogicKids e Family Finance, de educação gamificada a finanças com IA.">
+  <meta name="description"
+    content="A ALGOR STUDIO é um estúdio independente de engenharia de software que cria produtos digitais elegantes e escaláveis: PyExplorer, LogicKids e Family Finance, de educação gamificada a finanças com IA.">
   <meta name="author" content="ALGOR STUDIO">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#f8fafc">
@@ -15,7 +17,8 @@
   <meta property="og:site_name" content="ALGOR STUDIO">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:title" content="ALGOR STUDIO | Estúdio de Engenharia de Software e Produtos Digitais">
-  <meta property="og:description" content="Produtos digitais elegantes, escaláveis e inteligentes: PyExplorer, LogicKids e Family Finance.">
+  <meta property="og:description"
+    content="Produtos digitais elegantes, escaláveis e inteligentes: PyExplorer, LogicKids e Family Finance.">
   <meta property="og:url" content="https://algorstudio.com.br/">
   <meta property="og:image" content="https://algorstudio.com.br/assets/images/og-image.jpg">
   <meta property="og:image:width" content="1200">
@@ -23,13 +26,14 @@
   <meta property="og:image:alt" content="ALGOR STUDIO — Engenharia de Software e Produtos Digitais">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ALGOR STUDIO | Engenharia de Software e Produtos Digitais">
-  <meta name="twitter:description" content="Produtos digitais elegantes, escaláveis e inteligentes: PyExplorer, LogicKids e Family Finance.">
+  <meta name="twitter:description"
+    content="Produtos digitais elegantes, escaláveis e inteligentes: PyExplorer, LogicKids e Family Finance.">
   <meta name="twitter:image" content="https://algorstudio.com.br/assets/images/og-image.jpg">
 
   <!-- Ícones -->
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/favicon.ico" sizes="48x48">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <!-- Performance: fonte auto-hospedada, sem requisições de terceiros -->
   <link rel="preload" href="assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -38,7 +42,14 @@
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/sections.css">
   <script type="module" src="js/main.js"></script>
-  <noscript><style>[data-filters] { display: none; }</style></noscript>
+  <script defer src="js/bundle.js"></script>
+  <noscript>
+    <style>
+      [data-filters] {
+        display: none;
+      }
+    </style>
+  </noscript>
 
   <!-- Schema.org: Organização, Website e catálogo de aplicações -->
   <script type="application/ld+json">
@@ -127,7 +138,8 @@
         ALGOR <span>STUDIO</span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menu">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"
+        aria-label="Abrir menu">
         <span class="nav-toggle__bars" aria-hidden="true"></span>
       </button>
 
@@ -149,17 +161,22 @@
     <section class="hero" id="inicio" aria-labelledby="hero-title">
       <div class="container hero__grid">
         <div>
-          <p class="hero__tag"><span class="hero__tag-dot">Independente</span> Engenharia de Software &amp; Produtos Digitais</p>
+          <p class="hero__tag"><span class="hero__tag-dot">Independente</span> Engenharia de Software &amp; Produtos
+            Digitais</p>
           <h1 class="hero__title" id="hero-title">
             Construímos produtos digitais <span class="text-gradient">elegantes, escaláveis e inteligentes.</span>
           </h1>
           <p class="hero__lead">
-            A ALGOR STUDIO é um estúdio de software sem amarras de nicho: do ensino gamificado de programação à gestão patrimonial com inteligência artificial, transformamos ideias em produtos que resolvem problemas reais.
+            A ALGOR STUDIO é um estúdio de software sem amarras de nicho: do ensino gamificado de programação à gestão
+            patrimonial com inteligência artificial, transformamos ideias em produtos que resolvem problemas reais.
           </p>
           <div class="hero__actions">
             <a class="btn btn--primary" href="#projetos">
               Ver projetos
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
             </a>
             <a class="btn btn--secondary" href="#contato">Entrar em contato</a>
           </div>
@@ -176,17 +193,19 @@
             <div class="studio-panel__bar"><i></i><i></i><i></i><span>algor.studio / produtos</span></div>
             <ul class="studio-panel__list" role="presentation">
               <li class="studio-panel__item">
-                <img src="assets/icons/pyexplorer.svg" alt="" width="40" height="40">
+                <img src="assets/icons/pyexplorer.svg" alt="" width="40" height="40" loading="lazy" decoding="async">
                 <div><strong>PyExplorer</strong><small>Python direto no navegador</small></div>
                 <span class="badge badge--live">Em produção</span>
               </li>
               <li class="studio-panel__item">
-                <img src="assets/images/logickids-icon.webp" alt="" width="40" height="40">
+                <img src="assets/images/logickids-icon.webp" alt="" width="40" height="40" loading="lazy"
+                  decoding="async">
                 <div><strong>LogicKids</strong><small>Lógica e blocos para escolas</small></div>
                 <span class="badge badge--dev">Em desenvolvimento</span>
               </li>
               <li class="studio-panel__item">
-                <img src="assets/icons/family-finance.svg" alt="" width="40" height="40">
+                <img src="assets/icons/family-finance.svg" alt="" width="40" height="40" loading="lazy"
+                  decoding="async">
                 <div><strong>Family Finance</strong><small>Conselho de Família IA</small></div>
                 <span class="badge badge--dev">Em desenvolvimento</span>
               </li>
@@ -196,24 +215,35 @@
               <svg viewBox="0 0 104 32" fill="none" aria-hidden="true">
                 <defs>
                   <linearGradient id="spark" x1="0" y1="0" x2="104" y2="0" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#2563EB"/><stop offset="1" stop-color="#4F46E5"/>
+                    <stop stop-color="#2563EB" />
+                    <stop offset="1" stop-color="#4F46E5" />
                   </linearGradient>
                 </defs>
-                <path d="M2 26 16 20l14 4 14-12 14 6 14-10 14 4 14-12" stroke="url(#spark)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 26 16 20l14 4 14-12 14 6 14-10 14 4 14-12" stroke="url(#spark)" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
           </div>
 
           <span class="float-chip float-chip--1">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="m16 18 6-6-6-6M8 6l-6 6 6 6" />
+            </svg>
             WebAssembly
           </span>
           <span class="float-chip float-chip--2">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z" />
+            </svg>
             IA Generativa
           </span>
           <span class="float-chip float-chip--3">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M13 2 3 14h9l-1 8 10-12h-9z" />
+            </svg>
             PWA offline
           </span>
         </div>
@@ -229,31 +259,54 @@
             <h2 class="section-title" id="sobre-title">Software bem feito, de ponta a ponta.</h2>
           </div>
           <div>
-            <p>Somos uma empresa independente de tecnologia. Concebemos, arquitetamos e colocamos no ar <strong>produtos digitais de alto padrão</strong>, sem nos limitar a um único segmento.</p>
-            <p>Cada produto nasce da mesma convicção: código limpo e arquitetura preparada para escalar, interfaces que as pessoas gostam de usar e foco em gerar valor tangível.</p>
+            <p>Somos uma empresa independente de tecnologia. Concebemos, arquitetamos e colocamos no ar <strong>produtos
+                digitais de alto padrão</strong>, sem nos limitar a um único segmento.</p>
+            <p>Cada produto nasce da mesma convicção: código limpo e arquitetura preparada para escalar, interfaces que
+              as pessoas gostam de usar e foco em gerar valor tangível.</p>
           </div>
         </div>
 
         <div class="grid-4">
           <article class="card reveal">
-            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 10 5-10 5L2 7zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span>
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m12 2 10 5-10 5L2 7zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg></span>
             <h3 class="card__title">Engenharia sólida</h3>
-            <p class="card__text">Arquiteturas modernas, código limpo, testes e entrega contínua para produtos que crescem sem virar dívida técnica.</p>
+            <p class="card__text">Arquiteturas modernas, código limpo, testes e entrega contínua para produtos que
+              crescem sem virar dívida técnica.</p>
           </article>
           <article class="card reveal">
-            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7zM18 13l-1.5-7.5L2 2l3.5 14.5L13 18zM2 2l7.6 7.6"/><circle cx="11" cy="11" r="2"/></svg></span>
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 19l7-7 3 3-7 7zM18 13l-1.5-7.5L2 2l3.5 14.5L13 18zM2 2l7.6 7.6" />
+                <circle cx="11" cy="11" r="2" />
+              </svg></span>
             <h3 class="card__title">Design intuitivo</h3>
-            <p class="card__text">Interfaces limpas, acessíveis e com micro-interações que tornam o uso simples e agradável.</p>
+            <p class="card__text">Interfaces limpas, acessíveis e com micro-interações que tornam o uso simples e
+              agradável.</p>
           </article>
           <article class="card reveal">
-            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/><circle cx="9" cy="7" r="4"/></svg></span>
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                <circle cx="9" cy="7" r="4" />
+              </svg></span>
             <h3 class="card__title">Foco no usuário</h3>
-            <p class="card__text">Do aluno de 8 anos ao gestor financeiro da família: partimos de quem usa para decidir o que construir.</p>
+            <p class="card__text">Do aluno de 8 anos ao gestor financeiro da família: partimos de quem usa para decidir
+              o que construir.</p>
           </article>
           <article class="card reveal">
-            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg></span>
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="6" cy="19" r="3" />
+                <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15" />
+                <circle cx="18" cy="5" r="3" />
+              </svg></span>
             <h3 class="card__title">Soluções de ponta a ponta</h3>
-            <p class="card__text">Descoberta, interface, backend, infraestrutura e evolução. Um único time responsável por todo o ciclo.</p>
+            <p class="card__text">Descoberta, interface, backend, infraestrutura e evolução. Um único time responsável
+              por todo o ciclo.</p>
           </article>
         </div>
 
@@ -261,12 +314,14 @@
           <article class="principle reveal">
             <span class="principle__label">Missão</span>
             <h3>Criar software que resolve problemas reais</h3>
-            <p>Construir produtos digitais elegantes, escaláveis e de alta performance que geram valor tangível para pessoas, famílias e instituições.</p>
+            <p>Construir produtos digitais elegantes, escaláveis e de alta performance que geram valor tangível para
+              pessoas, famílias e instituições.</p>
           </article>
           <article class="principle reveal">
             <span class="principle__label">Visão</span>
             <h3>Um estúdio de referência em produtos digitais</h3>
-            <p>Ser reconhecido pela qualidade técnica e pelo cuidado de design, explorando continuamente novas fronteiras como WebAssembly e IA generativa.</p>
+            <p>Ser reconhecido pela qualidade técnica e pelo cuidado de design, explorando continuamente novas
+              fronteiras como WebAssembly e IA generativa.</p>
           </article>
           <article class="principle reveal">
             <span class="principle__label">Valores</span>
@@ -287,41 +342,57 @@
         <div class="section-head reveal">
           <p class="eyebrow">Portfólio</p>
           <h2 class="section-title" id="projetos-title">Nossos produtos</h2>
-          <p class="section-lead">Três frentes em desenvolvimento ativo, da educação gamificada à inteligência patrimonial.</p>
+          <p class="section-lead">Três frentes em desenvolvimento ativo, da educação gamificada à inteligência
+            patrimonial.</p>
         </div>
 
         <div class="filters" data-filters role="group" aria-label="Filtrar projetos por categoria">
           <button class="filter-btn" type="button" data-filter="todos" aria-pressed="true">Todos</button>
           <button class="filter-btn" type="button" data-filter="educacao" aria-pressed="false">Educação</button>
-          <button class="filter-btn" type="button" data-filter="financas" aria-pressed="false">Finanças &amp; IA</button>
+          <button class="filter-btn" type="button" data-filter="financas" aria-pressed="false">Finanças &amp;
+            IA</button>
           <button class="filter-btn" type="button" data-filter="producao" aria-pressed="false">Em produção</button>
-          <button class="filter-btn" type="button" data-filter="desenvolvimento" aria-pressed="false">Em desenvolvimento</button>
+          <button class="filter-btn" type="button" data-filter="desenvolvimento" aria-pressed="false">Em
+            desenvolvimento</button>
         </div>
         <p class="visually-hidden" id="projects-status" role="status" aria-live="polite"></p>
 
         <div class="projects__grid">
           <!-- PyExplorer -->
-          <article class="project-card reveal" data-project="pyexplorer" data-tags="educacao producao" style="--accent:#10b981">
+          <article class="project-card reveal" data-project="pyexplorer" data-tags="educacao producao"
+            style="--accent:#10b981">
             <figure class="project-card__media">
               <span class="badge project-card__badge badge--live">Em produção</span>
-              <img src="assets/images/pyexplorer-cover.webp" alt="Arte de divulgação do PyExplorer com a mascote cobra exploradora e o texto Aprenda Python Jogando" width="1200" height="630" loading="lazy">
+              <img src="assets/images/pyexplorer-cover.webp"
+                alt="Arte de divulgação do PyExplorer com a mascote cobra exploradora e o texto Aprenda Python Jogando"
+                width="1200" height="630" loading="lazy">
             </figure>
             <div class="project-card__body">
               <header class="project-card__head">
-                <img class="project-card__icon" src="assets/icons/pyexplorer.svg" alt="Logomarca do PyExplorer" width="48" height="48" loading="lazy">
+                <img class="project-card__icon" src="assets/icons/pyexplorer.svg" alt="Logomarca do PyExplorer"
+                  width="48" height="48" loading="lazy">
                 <div class="project-card__titles">
                   <h3 class="project-card__name">PyExplorer</h3>
                   <p class="project-card__category">EduTech · Gamificação · WebAssembly</p>
                 </div>
               </header>
-              <p class="project-card__summary">Jogo educativo para crianças e adolescentes (8 a 15 anos) aprenderem Python de verdade, direto no navegador, em uma jornada de 4 sagas e 18 mundos.</p>
+              <p class="project-card__summary">Jogo educativo para crianças e adolescentes (8 a 15 anos) aprenderem
+                Python de verdade, direto no navegador, em uma jornada de 4 sagas e 18 mundos.</p>
               <ul class="chips" role="list" aria-label="Tecnologias">
-                <li class="chip">React 19</li><li class="chip">Pyodide (WASM)</li><li class="chip">PWA</li><li class="chip">Firebase</li>
+                <li class="chip">React 19</li>
+                <li class="chip">Pyodide (WASM)</li>
+                <li class="chip">PWA</li>
+                <li class="chip">Firebase</li>
               </ul>
               <div class="project-card__actions">
-                <button class="btn btn--secondary btn--sm" type="button" data-open-project="pyexplorer" aria-haspopup="dialog">Ver detalhes<span class="visually-hidden"> do PyExplorer</span></button>
-                <a class="btn btn--ghost btn--sm" href="https://pyexplorer.com.br" target="_blank" rel="noopener noreferrer">Acessar
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                <button class="btn btn--secondary btn--sm" type="button" data-open-project="pyexplorer"
+                  aria-haspopup="dialog">Ver detalhes<span class="visually-hidden"> do PyExplorer</span></button>
+                <a class="btn btn--ghost btn--sm" href="https://pyexplorer.com.br" target="_blank"
+                  rel="noopener noreferrer">Acessar
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7 17 17 7M8 7h9v9" />
+                  </svg>
                   <span class="visually-hidden">pyexplorer.com.br (abre em nova aba)</span>
                 </a>
               </div>
@@ -329,27 +400,40 @@
           </article>
 
           <!-- LogicKids -->
-          <article class="project-card reveal" data-project="logickids" data-tags="educacao desenvolvimento" style="--accent:#7c3aed">
+          <article class="project-card reveal" data-project="logickids" data-tags="educacao desenvolvimento"
+            style="--accent:#7c3aed">
             <figure class="project-card__media">
               <span class="badge project-card__badge badge--dev">Em desenvolvimento</span>
-              <img src="assets/images/logickids-cover.webp" alt="Arte de divulgação do LogicKids com a mascote coruja de óculos e fones de ouvido" width="1200" height="634" loading="lazy">
+              <img src="assets/images/logickids-cover.webp"
+                alt="Arte de divulgação do LogicKids com a mascote coruja de óculos e fones de ouvido" width="1200"
+                height="634" loading="lazy">
             </figure>
             <div class="project-card__body">
               <header class="project-card__head">
-                <img class="project-card__icon" src="assets/images/logickids-icon.webp" alt="Logomarca do LogicKids" width="48" height="48" loading="lazy">
+                <img class="project-card__icon" src="assets/images/logickids-icon.webp" alt="Logomarca do LogicKids"
+                  width="48" height="48" loading="lazy">
                 <div class="project-card__titles">
                   <h3 class="project-card__name">LogicKids</h3>
                   <p class="project-card__category">EduTech · Escolas (B2B) · Raciocínio Lógico</p>
                 </div>
               </header>
-              <p class="project-card__summary">Plataforma gamificada de programação em blocos e pensamento computacional para escolas, com ambientes dedicados a alunos, professores e gestores.</p>
+              <p class="project-card__summary">Plataforma gamificada de programação em blocos e pensamento computacional
+                para escolas, com ambientes dedicados a alunos, professores e gestores.</p>
               <ul class="chips" role="list" aria-label="Tecnologias">
-                <li class="chip">Next.js 16</li><li class="chip">FastAPI</li><li class="chip">PostgreSQL</li><li class="chip">Blockly</li>
+                <li class="chip">Next.js 16</li>
+                <li class="chip">FastAPI</li>
+                <li class="chip">PostgreSQL</li>
+                <li class="chip">Blockly</li>
               </ul>
               <div class="project-card__actions">
-                <button class="btn btn--secondary btn--sm" type="button" data-open-project="logickids" aria-haspopup="dialog">Ver detalhes<span class="visually-hidden"> do LogicKids</span></button>
-                <a class="btn btn--ghost btn--sm" href="https://logickids.com.br" target="_blank" rel="noopener noreferrer">Visitar
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                <button class="btn btn--secondary btn--sm" type="button" data-open-project="logickids"
+                  aria-haspopup="dialog">Ver detalhes<span class="visually-hidden"> do LogicKids</span></button>
+                <a class="btn btn--ghost btn--sm" href="https://logickids.com.br" target="_blank"
+                  rel="noopener noreferrer">Visitar
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7 17 17 7M8 7h9v9" />
+                  </svg>
                   <span class="visually-hidden">logickids.com.br (abre em nova aba)</span>
                 </a>
               </div>
@@ -357,30 +441,40 @@
           </article>
 
           <!-- Family Finance -->
-          <article class="project-card reveal" data-project="family-finance" data-tags="financas desenvolvimento" style="--accent:#0f766e">
+          <article class="project-card reveal" data-project="family-finance" data-tags="financas desenvolvimento"
+            style="--accent:#0f766e">
             <figure class="project-card__media">
               <span class="badge project-card__badge badge--dev">Em desenvolvimento</span>
-              <img src="assets/images/family-finance-cover.webp" alt="Ilustração de painéis financeiros com gráficos e três conselheiros virtuais de inteligência artificial" width="1200" height="630" loading="lazy">
+              <img src="assets/images/family-finance-cover.webp"
+                alt="Ilustração de painéis financeiros com gráficos e três conselheiros virtuais de inteligência artificial"
+                width="1200" height="630" loading="lazy">
             </figure>
             <div class="project-card__body">
               <header class="project-card__head">
-                <img class="project-card__icon" src="assets/icons/family-finance.svg" alt="Logomarca do Family Finance" width="48" height="48" loading="lazy">
+                <img class="project-card__icon" src="assets/icons/family-finance.svg" alt="Logomarca do Family Finance"
+                  width="48" height="48" loading="lazy">
                 <div class="project-card__titles">
                   <h3 class="project-card__name">Family Finance</h3>
                   <p class="project-card__category">FinTech · Inteligência Artificial · Patrimônio</p>
                 </div>
               </header>
-              <p class="project-card__summary">Gestão financeira e patrimonial da família com o Conselho de Família IA: conselheiros virtuais que analisam riscos, dividendos e oportunidades.</p>
+              <p class="project-card__summary">Gestão financeira e patrimonial da família com o Conselho de Família IA:
+                conselheiros virtuais que analisam riscos, dividendos e oportunidades.</p>
               <ul class="chips" role="list" aria-label="Tecnologias">
-                <li class="chip">React 19</li><li class="chip">Gemini API</li><li class="chip">Firebase</li><li class="chip">Recharts</li>
+                <li class="chip">React 19</li>
+                <li class="chip">Gemini API</li>
+                <li class="chip">Firebase</li>
+                <li class="chip">Recharts</li>
               </ul>
               <div class="project-card__actions">
-                <button class="btn btn--secondary btn--sm" type="button" data-open-project="family-finance" aria-haspopup="dialog">Ver detalhes<span class="visually-hidden"> do Family Finance</span></button>
+                <button class="btn btn--secondary btn--sm" type="button" data-open-project="family-finance"
+                  aria-haspopup="dialog">Ver detalhes<span class="visually-hidden"> do Family Finance</span></button>
               </div>
             </div>
           </article>
         </div>
-        <p class="projects__empty" id="projects-empty" hidden>Nenhum projeto nesta categoria no momento. Novidades em breve.</p>
+        <p class="projects__empty" id="projects-empty" hidden>Nenhum projeto nesta categoria no momento. Novidades em
+          breve.</p>
       </div>
     </section>
 
@@ -415,10 +509,18 @@
         <div class="stack reveal">
           <h3 class="stack__title">Tecnologias com as quais trabalhamos</h3>
           <ul class="chips" role="list">
-            <li class="chip">React</li><li class="chip">Next.js</li><li class="chip">TypeScript</li>
-            <li class="chip">Python</li><li class="chip">FastAPI</li><li class="chip">PostgreSQL</li>
-            <li class="chip">Firebase</li><li class="chip">WebAssembly</li><li class="chip">Gemini API</li>
-            <li class="chip">Docker</li><li class="chip">PWA</li><li class="chip">Vanilla Web</li>
+            <li class="chip">React</li>
+            <li class="chip">Next.js</li>
+            <li class="chip">TypeScript</li>
+            <li class="chip">Python</li>
+            <li class="chip">FastAPI</li>
+            <li class="chip">PostgreSQL</li>
+            <li class="chip">Firebase</li>
+            <li class="chip">WebAssembly</li>
+            <li class="chip">Gemini API</li>
+            <li class="chip">Docker</li>
+            <li class="chip">PWA</li>
+            <li class="chip">Vanilla Web</li>
           </ul>
         </div>
       </div>
@@ -430,36 +532,54 @@
         <div class="section-head reveal">
           <p class="eyebrow">Algor Labs · P&amp;D</p>
           <h2 class="section-title" id="labs-title">O que estamos construindo a seguir.</h2>
-          <p class="section-lead">Nossa incubadora de ideias: frentes de pesquisa que podem virar os próximos produtos da ALGOR STUDIO.</p>
+          <p class="section-lead">Nossa incubadora de ideias: frentes de pesquisa que podem virar os próximos produtos
+            da ALGOR STUDIO.</p>
         </div>
 
         <div class="labs__grid">
           <article class="card lab-card reveal">
             <span class="badge badge--concept">Conceito</span>
-            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></span>
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m16 18 6-6-6-6M8 6l-6 6 6 6" />
+              </svg></span>
             <h3 class="card__title">Ferramentas para desenvolvedores</h3>
-            <p class="card__text">Utilitários que automatizam o que o nosso próprio time faz todo dia, abertos para quem constrói software.</p>
+            <p class="card__text">Utilitários que automatizam o que o nosso próprio time faz todo dia, abertos para quem
+              constrói software.</p>
           </article>
           <article class="card lab-card reveal">
             <span class="badge badge--concept">Conceito</span>
-            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg></span>
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2 3 14h9l-1 8 10-12h-9z" />
+              </svg></span>
             <h3 class="card__title">Automação inteligente</h3>
-            <p class="card__text">Fluxos que eliminam trabalho repetitivo em operações de pequenas empresas, escolas e famílias.</p>
+            <p class="card__text">Fluxos que eliminam trabalho repetitivo em operações de pequenas empresas, escolas e
+              famílias.</p>
           </article>
           <article class="card lab-card reveal">
             <span class="badge badge--concept">Conceito</span>
-            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></svg></span>
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z" />
+              </svg></span>
             <h3 class="card__title">IA aplicada</h3>
-            <p class="card__text">Agentes e assistentes especializados que transformam dados em decisões em domínios onde já temos experiência.</p>
+            <p class="card__text">Agentes e assistentes especializados que transformam dados em decisões em domínios
+              onde já temos experiência.</p>
           </article>
           <article class="card lab-card lab-card--cta reveal">
             <div>
               <h3 class="card__title">Tem uma ideia?</h3>
               <p class="card__text">Queremos ouvir sugestões de produtos, parcerias e pedidos de acesso antecipado.</p>
             </div>
-            <a class="btn btn--primary btn--sm" href="mailto:contato@algorstudio.com.br?subject=Ideia%20para%20o%20Algor%20Labs">
+            <a class="btn btn--primary btn--sm"
+              href="mailto:contato@algorstudio.com.br?subject=Ideia%20para%20o%20Algor%20Labs">
               Enviar uma ideia
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
             </a>
           </article>
         </div>
@@ -473,21 +593,37 @@
           <div>
             <p class="eyebrow">Contato</p>
             <h2 class="section-title" id="contato-title">Vamos construir algo juntos?</h2>
-            <p class="section-lead">Conte sobre o seu projeto, parceria ou ideia. Respondemos pessoalmente, sem formulários complicados.</p>
+            <p class="section-lead">Conte sobre o seu projeto, parceria ou ideia. Respondemos pessoalmente, sem
+              formulários complicados.</p>
           </div>
           <ul class="contact__links" role="list">
             <li>
               <a class="contact-link" href="mailto:contato@algorstudio.com.br">
-                <span class="contact-link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+                <span class="contact-link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-10 6L2 7" />
+                  </svg></span>
                 <span class="contact-link__text"><strong>E-mail</strong><span>contato@algorstudio.com.br</span></span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
               </a>
             </li>
             <li>
               <a class="contact-link" href="https://github.com/albertoivo" target="_blank" rel="noopener noreferrer">
-                <span class="contact-link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4M9 18c-4.51 2-5-2-7-2"/></svg></span>
-                <span class="contact-link__text"><strong>GitHub</strong><span>github.com/albertoivo <span class="visually-hidden">(abre em nova aba)</span></span></span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                <span class="contact-link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4M9 18c-4.51 2-5-2-7-2" />
+                  </svg></span>
+                <span class="contact-link__text"><strong>GitHub</strong><span>github.com/albertoivo <span
+                      class="visually-hidden">(abre em nova aba)</span></span></span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7M8 7h9v9" />
+                </svg>
               </a>
             </li>
           </ul>
@@ -519,8 +655,10 @@
         <nav aria-label="Rodapé: produtos">
           <h2>Produtos</h2>
           <ul>
-            <li><a href="https://pyexplorer.com.br" target="_blank" rel="noopener noreferrer">PyExplorer</a></li>
-            <li><a href="https://logickids.com.br" target="_blank" rel="noopener noreferrer">LogicKids</a></li>
+            <li><a href="https://pyexplorer.com.br" target="_blank" rel="noopener noreferrer">PyExplorer<span
+                  class="visually-hidden"> (abre em nova aba)</span></a></li>
+            <li><a href="https://logickids.com.br" target="_blank" rel="noopener noreferrer">LogicKids<span
+                  class="visually-hidden"> (abre em nova aba)</span></a></li>
             <li><a href="#projetos">Family Finance</a></li>
           </ul>
         </nav>
@@ -536,15 +674,20 @@
   <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title" closedby="any">
     <form method="dialog">
       <button class="project-dialog__close" type="submit" aria-label="Fechar detalhes do projeto">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+          stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 6 6 18M6 6l12 12" />
+        </svg>
       </button>
     </form>
 
     <div class="project-dialog__scroll">
-      <img class="project-dialog__cover" data-slot="cover" src="" alt="" width="1200" height="630">
+      <img class="project-dialog__cover" data-slot="cover" src="assets/images/pyexplorer-cover.webp" alt="" width="1200"
+        height="630" loading="lazy">
       <div class="project-dialog__content">
         <header class="project-dialog__head">
-          <img class="project-dialog__icon" data-slot="icon" src="" alt="" width="56" height="56">
+          <img class="project-dialog__icon" data-slot="icon" src="assets/icons/pyexplorer.svg" alt="" width="56"
+            height="56" loading="lazy">
           <div>
             <h2 class="project-dialog__title" id="project-dialog-title" data-slot="name"></h2>
             <p class="project-dialog__tagline" data-slot="tagline"></p>
@@ -570,9 +713,13 @@
     <footer class="project-dialog__footer">
       <a class="btn btn--primary" data-slot="link" href="#" target="_blank" rel="noopener noreferrer">
         <span></span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+          stroke-linejoin="round" aria-hidden="true">
+          <path d="M7 17 17 7M8 7h9v9" />
+        </svg>
       </a>
-      <p data-slot="note" class="project-dialog__tagline" hidden>Ainda sem lançamento público. Fale conosco para conhecer a versão atual.</p>
+      <p data-slot="note" class="project-dialog__tagline" hidden>Ainda sem lançamento público. Fale conosco para
+        conhecer a versão atual.</p>
       <form method="dialog">
         <button class="btn btn--secondary" type="submit" autofocus>Fechar</button>
       </form>
@@ -580,7 +727,11 @@
   </dialog>
 
   <template id="tpl-check">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+      stroke-linejoin="round" aria-hidden="true">
+      <path d="M20 6 9 17l-5-5" />
+    </svg>
   </template>
 </body>
+
 </html>
