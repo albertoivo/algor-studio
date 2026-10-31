@@ -96,7 +96,6 @@ button {
 :focus-visible {
   outline: 3px solid var(--color-indigo-500);
   outline-offset: 3px;
-  border-radius: 0.25rem;
 }
 
 ::selection {
@@ -105,6 +104,10 @@ button {
 
 html [hidden] {
   display: none;
+}
+
+#conteudo:focus {
+  outline: none;
 }
 
 #top-sentinel {
