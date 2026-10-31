@@ -165,8 +165,12 @@
             if (!entry.isIntersecting) continue;
             for (const link of links) {
               const active = link.getAttribute("href") === `#${entry.target.id}`;
-              if (active) link.setAttribute("aria-current", "true");
-              else link.removeAttribute("aria-current");
+              const isCurrentlyActive = link.hasAttribute("aria-current");
+              if (active && !isCurrentlyActive) {
+                link.setAttribute("aria-current", "true");
+              } else if (!active && isCurrentlyActive) {
+                link.removeAttribute("aria-current");
+              }
             }
           }
         },
