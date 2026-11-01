@@ -94,7 +94,7 @@ button {
 }
 
 :focus-visible {
-  outline: 3px solid var(--color-indigo-500);
+  outline: 3px solid var(--focus-ring-color);
   outline-offset: 3px;
 }
 
@@ -173,11 +173,6 @@ html [hidden] {
 .section-head {
   max-width: 44rem;
   margin-bottom: var(--space-6);
-}
-
-.section-head--center {
-  margin-inline: auto;
-  text-align: center;
 }
 
 .eyebrow {

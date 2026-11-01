@@ -130,11 +130,11 @@
 @keyframes pulse-dot {
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgb(4 120 87 / 0.45);
+    box-shadow: 0 0 0 0 rgb(6 95 70 / 0.45);
   }
 
   50% {
-    box-shadow: 0 0 0 0.3rem rgb(4 120 87 / 0);
+    box-shadow: 0 0 0 0.3rem rgb(6 95 70 / 0);
   }
 }
 

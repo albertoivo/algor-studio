@@ -90,9 +90,13 @@ function enableLightDismissFallback(dialog) {
   };
 
   let pressedOutside = false;
-  dialog.addEventListener("pointerdown", (event) => {
-    pressedOutside = isOutside(event);
-  });
+  dialog.addEventListener(
+    "pointerdown",
+    (event) => {
+      pressedOutside = isOutside(event);
+    },
+    { passive: true },
+  );
   dialog.addEventListener("pointerup", (event) => {
     if (pressedOutside && isOutside(event)) dialog.close();
   });

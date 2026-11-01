@@ -12,12 +12,12 @@
 
 :root {
   /* Cores — marca */
-  --color-brand-600: #2563eb;
-  --color-brand-700: #1d4ed8;
-  --color-indigo-500: #6366f1;
-  --color-indigo-600: #4f46e5;
-  --gradient-brand: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
-  --gradient-brand-soft: linear-gradient(135deg, rgb(37 99 235 / 0.1), rgb(79 70 229 / 0.1));
+  --color-brand-600: #1d4ed8;
+  --color-brand-700: #1e40af;
+  --color-indigo-500: #4f46e5;
+  --color-indigo-600: #4338ca;
+  --gradient-brand: linear-gradient(135deg, #1d4ed8 0%, #4338ca 100%);
+  --gradient-brand-soft: linear-gradient(135deg, rgb(29 78 216 / 0.12), rgb(67 56 202 / 0.12));
 
   /* Cores — superfícies e texto */
   --color-bg: #f8fafc;
@@ -27,15 +27,19 @@
   --color-border-strong: rgb(15 23 42 / 0.16);
   --color-text-strong: #0f172a;
   --color-text: #334155;
-  --color-text-muted: #64748b;
+  --color-text-muted: #475569;
 
-  /* Cores — status (semânticas, contraste AA sobre o fundo do badge) */
+  /* Cores — status (semânticas, contraste rigoroso AAA/AA sobre fundo do badge) */
   --status-live-bg: #ecfdf5;
-  --status-live-fg: #047857;
+  --status-live-fg: #065f46;
   --status-dev-bg: #eef2ff;
-  --status-dev-fg: #4338ca;
+  --status-dev-fg: #3730a3;
   --status-concept-bg: #fffbeb;
-  --status-concept-fg: #b45309;
+  --status-concept-fg: #92400e;
+
+  /* Foco acessível */
+  --focus-ring-color: #4f46e5;
+  --focus-ring-contrast: #a5b4fc;
 
   /* Tipografia */
   --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;

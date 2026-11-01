@@ -37,12 +37,16 @@ export function initNavigation() {
   });
 
   // Fecha ao clicar/tocar fora do menu mobile
-  document.addEventListener("pointerdown", (event) => {
-    if (!isOpen()) return;
-    if (!nav.contains(event.target) && !toggle.contains(event.target)) {
-      setMenu(false);
-    }
-  });
+  document.addEventListener(
+    "pointerdown",
+    (event) => {
+      if (!isOpen()) return;
+      if (!nav.contains(event.target) && !toggle.contains(event.target)) {
+        setMenu(false);
+      }
+    },
+    { passive: true },
+  );
 
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape" && isOpen()) {

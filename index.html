@@ -60,8 +60,9 @@
   <link rel="icon" href="./favicon.ico" sizes="48x48">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png" sizes="180x180">
 
-  <!-- Performance: fonte auto-hospedada, sem requisições de terceiros -->
+  <!-- Performance: fonte auto-hospedada e preload de asset prioritário (LCP) -->
   <link rel="preload" href="./assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./assets/icons/pyexplorer.svg" as="image" type="image/svg+xml" fetchpriority="high">
   <link rel="stylesheet" href="./css/variables.css">
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/components.css">
@@ -370,7 +371,7 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a class="brand" href="#inicio" aria-label="ALGOR STUDIO — início">
-        <img src="./favicon.svg" alt="" width="36" height="36" loading="lazy" decoding="async">
+        <img src="./favicon.svg" alt="" width="36" height="36" loading="eager">
         ALGOR <span>STUDIO</span>
       </a>
 
@@ -423,17 +424,17 @@
             <div class="studio-panel__bar"><i></i><i></i><i></i><span>algor.studio / produtos</span></div>
             <ul class="studio-panel__list" role="presentation">
               <li class="studio-panel__item">
-                <img src="./assets/icons/pyexplorer.svg" alt="" width="40" height="40" loading="lazy" decoding="async">
+                <img src="./assets/icons/pyexplorer.svg" alt="" width="40" height="40" loading="eager" fetchpriority="high">
                 <div><strong>PyExplorer</strong><small>Python direto no navegador</small></div>
                 <span class="badge badge--live">Em produção</span>
               </li>
               <li class="studio-panel__item">
-                <img src="./assets/images/logickids-icon.webp" alt="" width="40" height="40" loading="lazy" decoding="async">
+                <img src="./assets/images/logickids-icon.webp" alt="" width="40" height="40" loading="eager">
                 <div><strong>LogicKids</strong><small>Lógica e blocos para escolas</small></div>
                 <span class="badge badge--dev">Em desenvolvimento</span>
               </li>
               <li class="studio-panel__item">
-                <img src="./assets/icons/family-finance.svg" alt="" width="40" height="40" loading="lazy" decoding="async">
+                <img src="./assets/icons/family-finance.svg" alt="" width="40" height="40" loading="eager">
                 <div><strong>Family Finance</strong><small>Conselho de Família IA</small></div>
                 <span class="badge badge--dev">Em desenvolvimento</span>
               </li>

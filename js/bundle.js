@@ -131,12 +131,16 @@
       if (event.target.closest("a")) setMenu(false);
     });
 
-    document.addEventListener("pointerdown", (event) => {
-      if (!isOpen()) return;
-      if (!nav.contains(event.target) && !toggle.contains(event.target)) {
-        setMenu(false);
-      }
-    });
+    document.addEventListener(
+      "pointerdown",
+      (event) => {
+        if (!isOpen()) return;
+        if (!nav.contains(event.target) && !toggle.contains(event.target)) {
+          setMenu(false);
+        }
+      },
+      { passive: true },
+    );
 
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape" && isOpen()) {
@@ -233,9 +237,13 @@
         );
       };
       let pressedOutside = false;
-      dialog.addEventListener("pointerdown", (event) => {
-        pressedOutside = isOutside(event);
-      });
+      dialog.addEventListener(
+        "pointerdown",
+        (event) => {
+          pressedOutside = isOutside(event);
+        },
+        { passive: true },
+      );
       dialog.addEventListener("pointerup", (event) => {
         if (pressedOutside && isOutside(event)) dialog.close();
       });
