@@ -571,7 +571,8 @@
     border-color var(--duration-base) ease;
 }
 
-.contact-link:hover {
+.contact-link:hover,
+.contact-link:focus-visible {
   color: #fff;
   transform: translateX(4px);
   border-color: rgb(199 210 254 / 0.75);
