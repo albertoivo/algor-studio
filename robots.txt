@@ -31,4 +31,4 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-Sitemap: https://algorstudio.com.br/sitemap.xml
+Sitemap: https://www.algorstudio.com.br/sitemap.xml

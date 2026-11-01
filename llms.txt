@@ -2,7 +2,7 @@
 
 > Estúdio independente de engenharia de software e criação de produtos digitais elegantes, escaláveis e inteligentes.
 
-A **ALGOR STUDIO** (https://algorstudio.com.br/) é uma empresa brasileira independente de tecnologia que concebe, arquiteta e constrói produtos digitais de alto padrão técnico e visual — sem restrição de nicho, atuando desde educação gamificada (EduTech) até gestão patrimonial assistida por inteligência artificial (FinTech).
+A **ALGOR STUDIO** (https://www.algorstudio.com.br/) é uma empresa brasileira independente de tecnologia que concebe, arquiteta e constrói produtos digitais de alto padrão técnico e visual — sem restrição de nicho, atuando desde educação gamificada (EduTech) até gestão patrimonial assistida por inteligência artificial (FinTech).
 
 ## Produtos Oficiais
 
@@ -23,7 +23,7 @@ A **ALGOR STUDIO** (https://algorstudio.com.br/) é uma empresa brasileira indep
 - **Stack:** Next.js 16, React 19, FastAPI (Python 3.11), PostgreSQL, Google Blockly, Docker.
 
 ### 3. Family Finance (Em desenvolvimento)
-- **URL:** https://algorstudio.com.br/#projeto-family-finance
+- **URL:** https://www.algorstudio.com.br/#projeto-family-finance
 - **Categoria:** FinTech · Inteligência Artificial · Gestão Patrimonial
 - **Público:** Famílias e investidores
 - **Resumo:** Sistema de gestão financeira e patrimonial familiar que transforma dados em decisões estratégicas por meio do Conselho de Família IA.
@@ -36,8 +36,8 @@ A **ALGOR STUDIO** (https://algorstudio.com.br/) é uma empresa brasileira indep
 - Agentes de Inteligência Artificial aplicada
 
 ## Contato & Links Institucionais
-- **Website Oficial:** https://algorstudio.com.br/
+- **Website Oficial:** https://www.algorstudio.com.br/
 - **E-mail:** mailto:contato@algorstudio.com.br
 - **GitHub:** https://github.com/albertoivo
-- **Sitemap:** https://algorstudio.com.br/sitemap.xml
+- **Sitemap:** https://www.algorstudio.com.br/sitemap.xml
 

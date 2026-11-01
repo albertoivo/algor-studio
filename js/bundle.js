@@ -23,10 +23,10 @@
       tagline: "Aprenda Python jogando",
       url: "https://pyexplorer.com.br",
       urlLabel: "Acessar pyexplorer.com.br",
-      cover: "assets/images/pyexplorer-cover.webp",
+      cover: "./assets/images/pyexplorer-cover.webp",
       coverAlt:
         "Arte de divulgação do PyExplorer com a mascote cobra exploradora e o texto Aprenda Python Jogando",
-      icon: "assets/icons/pyexplorer.svg",
+      icon: "./assets/icons/pyexplorer.svg",
       description:
         "Jogo educativo que ensina programação Python de forma gamificada para crianças e adolescentes de 8 a 15 anos. O código roda de verdade no navegador, sem instalação, e a jornada é organizada em sagas e mundos temáticos.",
       metrics: [
@@ -52,9 +52,9 @@
       tagline: "Programação divertida para crianças",
       url: "https://logickids.com.br",
       urlLabel: "Visitar logickids.com.br",
-      cover: "assets/images/logickids-cover.webp",
+      cover: "./assets/images/logickids-cover.webp",
       coverAlt: "Arte de divulgação do LogicKids com a mascote coruja de óculos e fones de ouvido",
-      icon: "assets/images/logickids-icon.webp",
+      icon: "./assets/images/logickids-icon.webp",
       description:
         "Plataforma gamificada de programação em blocos e pensamento computacional pensada para escolas, professores e turmas. Une uma experiência lúdica para os alunos a ferramentas de gestão para a instituição.",
       metrics: [
@@ -79,10 +79,10 @@
       tagline: "Seu patrimônio, com um conselho de família movido a IA",
       url: null,
       urlLabel: null,
-      cover: "assets/images/family-finance-cover.webp",
+      cover: "./assets/images/family-finance-cover.webp",
       coverAlt:
         "Ilustração de painéis financeiros com gráficos e três conselheiros virtuais de inteligência artificial",
-      icon: "assets/icons/family-finance.svg",
+      icon: "./assets/icons/family-finance.svg",
       description:
         "Sistema de gestão financeira e patrimonial familiar que transforma dados em decisões estratégicas. O diferencial é o Conselho de Família IA: conselheiros virtuais com visões complementares analisam o patrimônio e emitem pareceres acionáveis.",
       metrics: [
