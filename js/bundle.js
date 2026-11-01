@@ -192,16 +192,32 @@
     const status = document.getElementById("projects-status");
     const empty = document.getElementById("projects-empty");
 
+    // ⚡ Bolt: Cache parsed tags and DOM references to avoid string splitting
+    // and object creation on every filter interaction.
+    const cachedCards = cards.map(card => ({
+      el: card,
+      tags: card.dataset.tags.split(" ")
+    }));
+
     const applyFilter = (filter) => {
       let visible = 0;
-      for (const card of cards) {
-        const tags = card.dataset.tags.split(" ");
-        const show = filter === "todos" || tags.includes(filter);
-        card.hidden = !show;
+      for (const card of cachedCards) {
+        const show = filter === "todos" || card.tags.includes(filter);
+
+        // ⚡ Bolt: DOM write guard - only update the DOM if the state changed
+        // to prevent unnecessary layout thrashing.
+        const hide = !show;
+        if (card.el.hidden !== hide) {
+            card.el.hidden = hide;
+        }
+
         if (show) visible += 1;
       }
       for (const button of buttons) {
-        button.setAttribute("aria-pressed", String(button.dataset.filter === filter));
+        const isPressed = button.dataset.filter === filter;
+        if (button.getAttribute("aria-pressed") !== String(isPressed)) {
+            button.setAttribute("aria-pressed", String(isPressed));
+        }
       }
       if (empty) empty.hidden = visible > 0;
       if (status) {
