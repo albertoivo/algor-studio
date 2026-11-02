@@ -667,7 +667,8 @@
   text-decoration: none;
 }
 
-.site-footer ul a:hover {
+.site-footer ul a:hover,
+.site-footer ul a:focus-visible {
   color: var(--color-brand-600);
   text-decoration: underline;
 }
