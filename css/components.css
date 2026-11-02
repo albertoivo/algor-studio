@@ -42,13 +42,15 @@
   box-shadow: var(--shadow-brand);
 }
 
-.btn--primary:hover {
+.btn--primary:hover,
+.btn--primary:focus-visible {
   color: #fff;
   transform: translateY(-2px);
   box-shadow: 0 2px 4px rgb(37 99 235 / 0.35), 0 12px 28px rgb(79 70 229 / 0.38);
 }
 
-.btn--primary:hover svg {
+.btn--primary:hover svg,
+.btn--primary:focus-visible svg {
   transform: translateX(3px);
 }
 
@@ -59,7 +61,8 @@
   box-shadow: var(--shadow-xs);
 }
 
-.btn--secondary:hover {
+.btn--secondary:hover,
+.btn--secondary:focus-visible {
   color: var(--color-text-strong);
   border-color: rgb(79 70 229 / 0.45);
   background: #fbfbff;
@@ -73,12 +76,14 @@
   padding-inline: 0.75rem;
 }
 
-.btn--ghost:hover {
+.btn--ghost:hover,
+.btn--ghost:focus-visible {
   color: var(--color-brand-700);
   background: rgb(37 99 235 / 0.07);
 }
 
-.btn--ghost:hover svg {
+.btn--ghost:hover svg,
+.btn--ghost:focus-visible svg {
   transform: translate(2px, -2px);
 }
 
@@ -204,7 +209,8 @@
   text-decoration: none;
 }
 
-.brand:hover {
+.brand:hover,
+.brand:focus-visible {
   color: var(--color-text-strong);
 }
 
@@ -247,6 +253,7 @@
 }
 
 .nav__link:hover,
+.nav__link:focus-visible,
 .nav__link[aria-current="true"] {
   color: var(--color-text-strong);
   background: rgb(15 23 42 / 0.05);
@@ -443,7 +450,8 @@
     box-shadow var(--duration-base) ease;
 }
 
-.filter-btn:hover {
+.filter-btn:hover,
+.filter-btn:focus-visible {
   border-color: rgb(79 70 229 / 0.5);
   color: var(--color-text-strong);
 }
@@ -637,7 +645,8 @@
   transition: transform var(--duration-fast) var(--ease-out), background-color var(--duration-fast) ease;
 }
 
-.project-dialog__close:hover {
+.project-dialog__close:hover,
+.project-dialog__close:focus-visible {
   background: #fff;
   transform: rotate(90deg);
 }
