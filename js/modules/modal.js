@@ -102,21 +102,23 @@ function enableLightDismissFallback(dialog) {
   });
 }
 
+export function openProject(projectId) {
+  const dialog = document.getElementById("project-dialog");
+  if (!dialog || typeof dialog.showModal !== "function") return;
+
+  const project = byId.get(projectId);
+  if (!project) return;
+
+  renderProject(dialog, project);
+  dialog.querySelector(".project-dialog__scroll").scrollTop = 0;
+  if (!dialog.open) {
+    dialog.showModal();
+  }
+}
+
 export function initModal() {
   const dialog = document.getElementById("project-dialog");
   if (!dialog || typeof dialog.showModal !== "function") return;
 
   enableLightDismissFallback(dialog);
-
-  document.addEventListener("click", (event) => {
-    const trigger = event.target.closest("[data-open-project]");
-    if (!trigger) return;
-
-    const project = byId.get(trigger.dataset.openProject);
-    if (!project) return;
-
-    renderProject(dialog, project);
-    dialog.querySelector(".project-dialog__scroll").scrollTop = 0;
-    dialog.showModal();
-  });
 }

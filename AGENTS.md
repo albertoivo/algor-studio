@@ -49,6 +49,10 @@ python3 -m http.server 8080
 
 # Ou via npx (se disponível)
 npx -y serve . -p 8080
+
+# Sincronizar alterações dos arquivos CSS modulares (css/*.css) com o index.html:
+python3 scripts/build.py
+# ou: node scripts/build.js
 ```
 
 ### Checklist de Qualidade antes de finalizar tarefas:
