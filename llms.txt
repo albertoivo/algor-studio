@@ -2,42 +2,30 @@
 
 > Estúdio independente de engenharia de software e criação de produtos digitais elegantes, escaláveis e inteligentes.
 
-A **ALGOR STUDIO** (https://www.algorstudio.com.br/) é uma empresa brasileira independente de tecnologia que concebe, arquiteta e constrói produtos digitais de alto padrão técnico e visual — sem restrição de nicho, atuando desde educação gamificada (EduTech) até gestão patrimonial assistida por inteligência artificial (FinTech).
+A ALGOR STUDIO é uma empresa brasileira de tecnologia que concebe, arquiteta e constrói produtos digitais de alto padrão técnico e visual — sem restrição de nicho, atuando desde educação gamificada (EduTech) até gestão patrimonial assistida por inteligência artificial (FinTech).
 
 ## Produtos Oficiais
 
-### 1. PyExplorer (Em produção)
-- **URL:** https://pyexplorer.com.br
-- **Categoria:** EduTech · Gamificação · WebAssembly
-- **Público:** Crianças e adolescentes de 8 a 15 anos
-- **Resumo:** Jogo educativo gamificado para aprender programação Python real diretamente no navegador, sem necessidade de instalação.
-- **Diferenciais:** Execução de Python nativo no navegador via WebAssembly (Pyodide), desafios gráficos com Turtle Graphics, 4 sagas épicas, 18 mundos, 8 tipos de desafio (incluindo Boss Battles e problemas de Parsons), emissão de certificado em PDF e suporte offline via PWA.
-- **Stack:** React 19, TypeScript, Pyodide (WASM), Monaco Editor, Firebase, PWA.
+- [PyExplorer](https://pyexplorer.com.br): Jogo educativo gamificado para aprender programação Python nativo no navegador via WebAssembly (Pyodide), com desafios visuais em Turtle Graphics, 4 sagas épicas, 18 mundos, boss battles e suporte a PWA offline.
+- [LogicKids](https://logickids.com.br): Plataforma gamificada de programação visual em blocos (Google Blockly) e desenvolvimento de pensamento computacional para escolas, professores e turmas escolares.
+- [Family Finance](https://www.algorstudio.com.br/#projeto-family-finance): Sistema de gestão patrimonial e inteligência financeira familiar com Conselho de Família IA movido pelo Google Gemini.
 
-### 2. LogicKids (Em desenvolvimento)
-- **URL:** https://logickids.com.br
-- **Categoria:** EduTech · Escolas (B2B) · Pensamento Computacional
-- **Público:** Escolas, professores, gestores e turmas escolares
-- **Resumo:** Plataforma gamificada de programação em blocos e raciocínio lógico projetada para instituições de ensino.
-- **Diferenciais:** Ambientes dedicados para alunos, professores e gestores; programação visual em blocos com Google Blockly com transição progressiva para Python; arquitetura monorepo com backend dedicado.
-- **Stack:** Next.js 16, React 19, FastAPI (Python 3.11), PostgreSQL, Google Blockly, Docker.
+## Seções da Plataforma
 
-### 3. Family Finance (Em desenvolvimento)
-- **URL:** https://www.algorstudio.com.br/#projeto-family-finance
-- **Categoria:** FinTech · Inteligência Artificial · Gestão Patrimonial
-- **Público:** Famílias e investidores
-- **Resumo:** Sistema de gestão financeira e patrimonial familiar que transforma dados em decisões estratégicas por meio do Conselho de Família IA.
-- **Diferenciais:** Três conselheiros virtuais especializados movidos pelo Google Gemini (O Estrategista de Risco, O Otimizador de Dividendos e O Caçador de Oportunidades), dashboards interativos de patrimônio, passivos, cofres (vaults) e planejamento colaborativo multi-usuário.
-- **Stack:** React 19, TypeScript, Vite, Google Gemini API, Firebase, Recharts.
+- [Sobre a ALGOR STUDIO](https://www.algorstudio.com.br/#sobre): Missão, cultura de engenharia, princípios institucionais e compromisso com excelência técnica.
+- [Portfólio de Projetos](https://www.algorstudio.com.br/#projetos): Vitrine interativa de softwares em produção e em desenvolvimento.
+- [Metodologia de Engenharia](https://www.algorstudio.com.br/#metodologia): Nossos pilares de arquitetura limpa, performance extrema, acessibilidade e design de alto padrão.
+- [Algor Labs (P&D)](https://www.algorstudio.com.br/#labs): Iniciativas de pesquisa e desenvolvimento em ferramentas para desenvolvedores, automação inteligente e agentes de IA.
+- [Contato & Parcerias](https://www.algorstudio.com.br/#contato): Canais diretos de comunicação e propostas de novos projetos.
 
-## Algor Labs (Pesquisa & Desenvolvimento)
-- Ferramentas para desenvolvedores
-- Automação inteligente de fluxos operacionais
-- Agentes de Inteligência Artificial aplicada
+## Contato & Canais Oficiais
 
-## Contato & Links Institucionais
-- **Website Oficial:** https://www.algorstudio.com.br/
-- **E-mail:** mailto:contato@algorstudio.com.br
-- **GitHub:** https://github.com/albertoivo
-- **Sitemap:** https://www.algorstudio.com.br/sitemap.xml
+- [Website Principal](https://www.algorstudio.com.br/): Portal institucional oficial da ALGOR STUDIO.
+- [GitHub da Organização](https://github.com/albertoivo): Repositórios de código, documentações e projetos de código aberto.
+- [E-mail Corporativo](mailto:contato@algorstudio.com.br): Canal oficial de contato direto e parcerias comerciais.
 
+## Optional
+
+- [Sitemap XML](https://www.algorstudio.com.br/sitemap.xml): Mapa estruturado de páginas para rastreadores e indexadores.
+- [Robots.txt](https://www.algorstudio.com.br/robots.txt): Diretrizes de rastreamento e permissões para bots de busca e IA.
+- [Web Manifest](https://www.algorstudio.com.br/site.webmanifest): Configurações e metadados de Progressive Web App (PWA).
